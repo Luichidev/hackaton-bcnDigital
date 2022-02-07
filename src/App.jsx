@@ -1,8 +1,12 @@
+import { useRef } from "react";
 import "./App.css";
 
 function App() {
+  const avatarImg = useRef(null);
   const handleClick = () => {
-    console.log("ok");
+    const nroRandom = Math.floor(Math.random() * 1000);
+    const avatar = `https://avatars.dicebear.com/api/avataaars/${nroRandom}.svg`;
+    avatarImg.current.src = avatar;
   };
   return (
     <main>
@@ -40,7 +44,11 @@ function App() {
             </div>
             <div className="form-group flex-container">
               <div className="avatar flex-1">
-                <img src="./images/no-avatar.png" alt="Avatar" />
+                <img
+                  ref={avatarImg}
+                  src="./images/no-avatar.png"
+                  alt="Avatar"
+                />
               </div>
               <div className="button flex-1">
                 <button className="btn" onClick={handleClick}>
