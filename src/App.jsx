@@ -17,11 +17,16 @@ function App() {
     setAvatar(avatarRandom);
   };
 
-  const handleNext = (params) => {
+  const handleSubmit = (params) => {
     console.log(params);
   };
 
   const username = useField({ type: "text" });
+  const email = useField({ type: "email" });
+  const country = useField({ type: "text" });
+  const city = useField({ type: "text" });
+  const years = useField({ type: "number" });
+
   return (
     <main>
       <section>
@@ -30,11 +35,11 @@ function App() {
           <form action="#">
             <div className="form-group">
               <label htmlFor="email">Correo:</label>
-              <input {...username} name="email" id="email" required />
+              <input {...email} name="email" id="email" required />
             </div>
             <div className="form-group">
               <label htmlFor="name">Nombre completo:</label>
-              <input type="text" name="name" id="name" required />
+              <input {...username} name="name" id="name" required />
             </div>
 
             <div className="form-group">
@@ -50,11 +55,11 @@ function App() {
             <div className="form-group flex-container">
               <div className="flex-1">
                 <label htmlFor="country">Pais:</label>
-                <input type="text" id="country" name="country" required />
+                <input {...country} id="country" name="country" required />
               </div>
               <div className="flex-1">
                 <label htmlFor="city">Ciudad de residencia</label>
-                <input type="text" id="city" name="city" required />
+                <input {...city} id="city" name="city" required />
               </div>
             </div>
             <div className="form-group flex-container">
@@ -67,9 +72,36 @@ function App() {
                 </button>
               </div>
             </div>
+            <div className="form-group flex-container">
+              <div className="flex-1">
+                <label htmlFor="years">Años de experiencia:</label>
+                <input {...years} id="years" name="years" required />
+              </div>
+              <div className="flex-1">
+                <label htmlFor="sector">Sector</label>
+                <select name="sector" id="sector">
+                  <option value="-1">-</option>
+                  <option value="0">Frontend</option>
+                  <option value="1">Backend</option>
+                  <option value="2">Mobile</option>
+                  <option value="3">Data</option>
+                </select>
+              </div>
+            </div>
+            <h2 className="skill-title">Skills</h2>
+            <div className="form-group flex-container">
+              <div className="skill-items flex-1">
+                <input id="js" name="js" type="checkbox" />
+                <label htmlFor="years">JavaScript</label>
+              </div>
+              <div className="skill-items flex-1">
+                <input id="html" name="html" type="checkbox" />
+                <label htmlFor="sector">HTML</label>
+              </div>
+            </div>
             <div className="form-group">
-              <button className="btn bg-primary" onClick={handleNext}>
-                Siguiente
+              <button className="btn bg-primary" onClick={handleSubmit}>
+                Enviar
               </button>
             </div>
           </form>
