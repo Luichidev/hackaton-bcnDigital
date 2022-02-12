@@ -1,8 +1,8 @@
-section {
+section.form {
   display: grid;
   place-content: center;
 }
-h1 {
+h1.title {
   text-align: center;
   padding-top: 16px;
   font-size: 2rem;
@@ -12,7 +12,7 @@ label {
   display: block;
   padding-bottom: 8px;
 }
-.form {
+form {
   max-width: 500px;
   width: 500px;
   padding: 8px 0;
@@ -23,6 +23,7 @@ select {
   width: 100%;
   padding: 8px;
   resize: none;
+  outline: 2px solid transparent;
 }
 input[type='checkbox'] {
   width: 16px;
@@ -33,22 +34,13 @@ input[type='checkbox'] {
 .form-group {
   gap: 8px;
   align-items: center;
-  padding: 16px 0;
+  padding: 8px 0;
 }
 .avatar {
   max-width: 100px;
 }
 .button {
   padding-left: 32px;
-}
-.bg-primary {
-  background-color: var(--mainColor);
-  font-weight: 700;
-  color: #fff;
-}
-.bg-secondary {
-  background-color: var(--secondaryColor);
-  font-weight: 700;
 }
 .skill-title {
   color: var(--mainColor);
@@ -58,6 +50,8 @@ input[type='checkbox'] {
   gap: 1rem;
 }
 .error {
-  color: red;
-  padding-top: 8px;
+  border: 2px;
+  border-left: 10px;
+  border-style: solid;
+  border-color: #f8007c;
 }

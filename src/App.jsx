@@ -1,15 +1,16 @@
-import { useState } from 'react'
-import { FormRegister } from './component/FormRegister'
+import { Home } from './pages/Home'
+import { Resume } from './pages/resume'
+import { Route } from 'wouter'
+import { DataContextProvider } from './context/DataContext'
 
 function App() {
-  const [toggleProfile, setToggleProfile] = useState(false)
-  return toggleProfile ? (
-    <h1>Aqui el perfil</h1>
-  ) : (
-    <FormRegister
-      toggleProfile={toggleProfile}
-      setToggleProfile={setToggleProfile}
-    />
+  return (
+    <main>
+      <DataContextProvider>
+        <Route component={Home} path="/" />
+        <Route component={Resume} path="/resume" />
+      </DataContextProvider>
+    </main>
   )
 }
 

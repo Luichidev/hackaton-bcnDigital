@@ -7,15 +7,14 @@
 }
 
 body,
-::placeholder {
-  font-family: Arial, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+::placeholder,
+textarea {
+  font-family: Arial, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
-
 img {
   max-width: 100%;
 }
-
 .flex-container {
   display: flex;
 }
@@ -25,7 +24,6 @@ img {
 .flex-2 {
   flex: 2;
 }
-
 .btn {
   display: block;
   max-width: 200px;
@@ -34,4 +32,13 @@ img {
   cursor: pointer;
   border: 0;
   outline: none;
+}
+.bg-primary {
+  background-color: var(--mainColor);
+  font-weight: 700;
+  color: #fff;
+}
+.bg-secondary {
+  background-color: var(--secondaryColor);
+  font-weight: 700;
 }
