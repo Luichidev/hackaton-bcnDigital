@@ -1,0 +1,58 @@
+.resume {
+  max-width: 1200px;
+  padding: 32px;
+  margin: 32px auto;
+  background-color: #cecece;
+}
+.resume h1,
+.resume button {
+  display: inline-block;
+  margin: 0 16px 16px 0;
+}
+.resume-container {
+  gap: 32px;
+}
+.details,
+.about {
+  background-color: #fff;
+}
+.details h2,
+.about h2,
+.about-tags h2,
+.about-description h2 {
+  padding: 16px;
+  border-bottom: 1px solid #cecece;
+}
+.details-content,
+.about-content,
+.description-content,
+.tags-content {
+  padding: 32px 16px;
+}
+.img-avatar {
+  max-width: 60%;
+  margin: auto;
+}
+.details-item label,
+.about-item label {
+  display: inline-block;
+  width: 35%;
+  margin-right: 8px;
+  color: var(--mainColor);
+  font-weight: 600;
+}
+.tags {
+  border-radius: 0.125rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  color: #fff;
+  display: inline-block;
+  line-height: 1;
+  padding: 0.25em 0.4em;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+.tags-content {
+  gap: 8px;
+}
