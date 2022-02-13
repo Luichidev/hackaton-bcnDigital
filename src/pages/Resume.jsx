@@ -6,8 +6,7 @@ import '../index.css'
 
 export function Resume() {
   const { data } = useContext(DataContext)
-  const [path, pushLocation] = useLocation()
-  console.log(data)
+  const [, pushLocation] = useLocation()
 
   const handleClick = (e) => {
     e.preventDefault()

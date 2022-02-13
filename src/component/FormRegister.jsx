@@ -10,7 +10,7 @@ import DataContext from '../context/DataContext'
 export function FormRegister() {
   const avatarImg = useRef(null)
   const { setData } = useContext(DataContext)
-  const [path, pushLocation] = useLocation()
+  const [, pushLocation] = useLocation()
 
   const {
     register,
@@ -67,7 +67,6 @@ export function FormRegister() {
             className={errors.name && 'error'}
           />
         </div>
-
         <div className="form-group">
           <label htmlFor="description">Descripción</label>
           <textarea {...register('description')} cols="30" rows="5"></textarea>
