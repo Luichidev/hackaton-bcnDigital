@@ -14,44 +14,33 @@ Tienes que tener instalado Node JS
 
 1. Descarga este repositorio en modo zip , clonando o haciendo un fork (bifurcación).
 2. Abre tu terminal favorita y dependiendo del tipo de descargar que hiciste sigue los siguientes pasos 
-   1. Zip.- Descomprime el archivo, por tu terminar accede a la capeta descomprimida y escribe el comando:
-      --
+   - Zip. Descomprime el archivo, por tu terminar accede a la capeta descomprimida y escribe el comando: 
       npm Install
       --
       o
-      --
       yarn install
-      --
-   2. Clone.- Inicia tu terminal, ponte en la capeta donde guardas tus proyectos, escribe el comando:
-      --
+
+   - Clone.- Inicia tu terminal, ponte en la capeta donde guardas tus proyectos, escribe el comando:
+      
       git clone 'url_de_este_proyecto'
       --
-
       cd 'nombre_del_proyecto'
-
-      --
       npm Install
-      --
       o
-      --
       yarn install
-      --      
 
-   3. Fork.- un fork es una bifurcación del proyecto original, es decir, una copia del proyecto pero en tu github personal, para descargar proyecto deberás utilizar el paso 1 o 2 de esta documentación.
+   - Fork.- un fork es una bifurcación del proyecto original, es decir, una copia del proyecto pero en tu github personal, para descargar proyecto deberás utilizar Zip o Clone.
    
 ### Empezar el proyecto ✈️
 
-una vez instaladas las dependencias, escribe el siguiente comando en tu terminal (Asegurate que estas dentro del proyecto).
+Una vez instaladas las dependencias, escribe el siguiente comando en tu terminal (Asegurate que estas dentro del proyecto).
 
---
 npm start
---
 
 o 
 
---
 npm run dev
---
+
 
 ### Tecnologias 🖥️
 
