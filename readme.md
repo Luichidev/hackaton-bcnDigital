@@ -16,16 +16,16 @@ Tienes que tener instalado Node JS
 2. Abre tu terminal favorita y dependiendo del tipo de descargar que hiciste sigue los siguientes pasos:
    
    * Zip: Descomprime el archivo, por tu terminar accede a la capeta descomprimida y escribe el comando: 
-      npm Install
-      o
+      npm Install <br>
+      o <br>
       yarn install
 
    * Clone: Inicia tu terminal, ponte en la capeta donde guardas tus proyectos, escribe el comando:
       
-      git clone 'url_de_este_proyecto'
-      cd 'nombre_del_proyecto'
-      npm Install
-      o
+      git clone 'url_de_este_proyecto' <br>
+      cd 'nombre_del_proyecto' <br>
+      npm Install <br>
+      o <br>
       yarn install
 
    * Fork: Un fork es una bifurcación del proyecto original, es decir, una copia del proyecto pero en tu github personal, para descargar proyecto deberás utilizar Zip o Clone.
@@ -34,8 +34,8 @@ Tienes que tener instalado Node JS
 
 Una vez instaladas las dependencias, escribe el siguiente comando en tu terminal (Asegurate que estas dentro del proyecto).
 
-npm start
-o 
+npm start <br>
+o <br>
 npm run dev
 
 ### Tecnologias 🖥️
