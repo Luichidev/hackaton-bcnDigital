@@ -62,4 +62,4 @@ npm run dev
 
 ### Autor 👨🏽‍💻
 
-**Luis Alberto Arana Montaño [Github](https://github.com/luichidev)
+**Luis Alberto Arana Montaño** [Github](https://github.com/luichidev)
